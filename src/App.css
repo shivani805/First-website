@@ -14,25 +14,331 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4e342e;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 1.5vmin);
   color: white;
 }
-
+.App-body {
+  height: 62vh;
+}
+p {
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.heading {
+  color: white;
+  font-size: 2em;
+  margin-left: 10em;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.para {
+  margin: 1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 1.5em;
+}
 .App-link {
-  color: #61dafb;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Courier New", Courier, monospace;
+}
+.anim-text {
+  text-align: initial;
+  color: #f1f1ed;
+  font-size: 3em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
+.Border {
+  height: 100vh;
+  background-image: linear-gradient(to right, #4e342e, #b48c7d);
+  border: 150px solid #4e342e;
+  outline-style: solid;
+  outline-color: yellow;
+  outline-width: thick;
+}
+.App-footer {
+  background-color: rgba(88, 85, 85, 0.384);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 50em;
+
+  border-radius: 3em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: ruby-text;
+  color: white;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: underline;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: white;
+}
+
+.imgg {
+  float: right;
+  background-image: linear-gradient(-90deg, #a1887f, #4e342e);
+}
+input[type="text"],
+select,
+textarea {
+  width: 30%;
+  padding: 12px;
+
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+  margin-left: 280px;
+  border-radius: 1.5em;
+  background-color: #4e342e;
+}
+.center {
+  margin-top: 6em;
+}
+.tl {
+  margin-left: 10em;
+  font-size: 1.5em;
+  color: white;
+}
+.line {
+  position: absolute;
+  top: 20%;
+  width: 24em;
+  margin: 15vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
+  text-align: justify;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.anim-typewriter {
+  animation: typewriter 3s steps(20) 1s infinite normal both,
+    blinkTextCursor 10000s steps(20) infinite normal;
+}
+.fa {
+  padding: 20px;
+  font-size: 15px;
+  width: 60px;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  border-color: white;
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+.fa-linkedin {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+.fa-github {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+.fa-location-arrow {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+.fa-envelope {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+.fa-volume-control-phone {
+  background: #4e342e;
+  color: white;
+  border-radius: 40px;
+  margin-right: 2em;
+}
+@keyframes typewriter {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 30em;
   }
+}
+@keyframes bilnkTextCursor {
+  from {
+    border-right-color: thistle;
+  }
+  to {
+    border-right-color: lawngreen;
+  }
+}
+button {
+  height: 50px;
+  width: 170px;
+  color: white;
+
+  background-color: #4e342e;
+  border-radius: 1em;
+}
+button:hover {
+  background-color: transparent;
+
+  border-color: white;
+}
+.button2 {
+  height: 40px;
+  width: 150px;
+  color: white;
+
+  background-color: #77574b;
+  border-radius: 1em;
+}
+.button2:hover {
+  background-color: #4e342e;
+
+  border-color: white;
+}
+div.transbox {
+  background-color: #4e342e;
+  opacity: 0.4;
+
+  border-radius: 1em;
+
+  color: #d3c8c8;
+  display: inline-block;
+
+  padding: 100px 220px;
+}
+div.transbox1 {
+  background-color: #4e342e;
+  opacity: 0.6;
+
+  border-radius: 1em;
+  margin: 5vh;
+  border-radius: 15px;
+  color: #4e342e;
+  display: flex;
+}
+
+.hl {
+  text-align: left;
+  color: white;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 50%;
+  background: rgb(243, 207, 207);
+  height: 30px;
+  border-radius: 3px;
+  /* -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, backgrond-color;
+  -ms-transition-property: width, backgrond-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, backgorund-color; */
+}
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  /* -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; */
+}
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  color: #ffffff;
+  background: #4e342e;
+  /* -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; */
+  font-weight: bold;
+  font-size: 13px;
+}
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  /* -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; */
+}
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 15px;
+  height: 35px;
+  line-height: 35px;
+  color: #4e342e;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
 }
