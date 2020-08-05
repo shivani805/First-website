@@ -30,7 +30,7 @@ export default class FindMe extends Component {
               <p>Contact Number :</p>
               <a href="/#">12345 67890</a>
               <br />
-              <a href="/#">12345 67890</a>
+              <a href="/#">12345 67897</a>
             </div>
           </div>
         </div>
